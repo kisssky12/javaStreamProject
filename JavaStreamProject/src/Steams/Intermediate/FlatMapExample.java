@@ -61,6 +61,6 @@ public class FlatMapExample {
 						return t.isBefore(u) ? u : t;
 					}
 				}); // reduce는 최종처리문 뒤에 더 이상 걸 수 없음.
-		System.out.println("min 값: " + result2);
+		System.out.println("min 값: " + result2.get());
 	}
 }
