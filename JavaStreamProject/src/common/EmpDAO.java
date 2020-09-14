@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EmpDAO {
-	public static List<Employee> getEmpList() {
+	public static List<Employee> getEmpList() throws SQLException{
 		Connection conn = ConnectionDB.getDB();
 		
 		String sql = "select * from employees";
